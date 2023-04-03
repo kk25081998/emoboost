@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import openai
 
 app = Flask(__name__)
-openai.api_key = "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"
+#add key
+openai.api_key = ""
 
 @app.route("/generate_quote", methods=["POST"])
 def generate_quote():
